@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cybermitra
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: cybermitra
+    ports:
+      - "5432:5432"
+    volumes:
+      - dev_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cybermitra"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+    restart: unless-stopped
+    environment:
+      ENV: development
+      DATABASE_URL: postgresql+psycopg2://cybermitra:devpassword@db:5432/cybermitra
+      CORS_ORIGINS: http://localhost:5173
+      ADMIN_API_KEY: devkey
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  dev_db_data:
+
+# Usage:
+#   docker compose -f docker-compose.dev.yml up --build
+#   cd frontend && npm install && npm run dev
+# The frontend dev server (vite) proxies /api to http://localhost:8000
+# automatically (see frontend/vite.config.js).

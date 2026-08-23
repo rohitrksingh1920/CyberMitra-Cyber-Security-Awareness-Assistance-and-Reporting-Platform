@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root{
+  --navy:#0B3D63; --navy-dark:#082A46; --navy-pale:#EAF1F7;
+  --blue:#1568B3; --blue-pale:#E4EFF8;
+  --gold:#C98A1E; --gold-pale:#FBF1DF;
+  --red:#D6293E; --red-pale:#FBE7E9;
+  --orange:#E38A1B; --orange-pale:#FDF0DE;
+  --green:#1E9E5A; --green-pale:#E4F7EC;
+  --bg:#F3F6F9; --surface:#FFFFFF;
+  --text:#16232E; --text-dim:#54677A; --text-faint:#8B9AA8;
+  --border:#DFE6EC; --border-soft:#EAEFF3;
+  --radius:12px;
+  --display:'Libre Franklin','Noto Sans Devanagari',sans-serif;
+  --body:'Inter','Noto Sans Devanagari',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;}
+h1,h2,h3,h4{font-family:var(--display);color:var(--navy-dark);letter-spacing:-.01em;}
+a{color:inherit;text-decoration:none;}
+button{font-family:var(--body);cursor:pointer;border:none;background:none;}
+img,svg{max-width:100%;}
+ul{list-style:none;}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+.hidden{display:none;}
