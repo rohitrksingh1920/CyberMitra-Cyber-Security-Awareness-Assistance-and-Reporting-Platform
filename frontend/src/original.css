@@ -3988,3 +3988,12 @@ footer a[href^="mailto:"]{color:var(--cybermitra-copper-dark,#9f6438);text-decor
   background: #fdecea;
   color: #7a1f16;
 }
+
+
+/* CyberMitra footer Back to Top */
+.cybermitra-back-to-top-wrap{display:flex;justify-content:center;align-items:center;padding:18px 0 4px;}
+.cybermitra-back-to-top{appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:transparent;color:inherit;padding:9px 18px;font:inherit;font-size:14px;line-height:1.2;cursor:pointer;transition:transform .2s ease,background-color .2s ease,border-color .2s ease;}
+.cybermitra-back-to-top:hover{transform:translateY(-2px);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.65);}
+.cybermitra-back-to-top .hi{display:none;}
+html[data-lang="hi"] .cybermitra-back-to-top .en{display:none;}
+html[data-lang="hi"] .cybermitra-back-to-top .hi{display:inline;}
