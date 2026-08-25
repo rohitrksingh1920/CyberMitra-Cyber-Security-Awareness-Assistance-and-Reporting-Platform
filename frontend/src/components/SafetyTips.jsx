@@ -1,5 +1,5 @@
-import { useLanguage } from '../context/LanguageContext';
-import { TIPS } from '../data/tips';
+import { useLanguage } from "../context/LanguageContext";
+import { TIPS } from "../data/tips";
 
 export default function SafetyTips() {
   const { lang, t } = useLanguage();
@@ -17,7 +17,10 @@ export default function SafetyTips() {
           {tips.map((x, i) => (
             <div className="tip-card" key={i}>
               <div>🛡️</div>
-              <div><b>{x.t}</b>{x.d}</div>
+              <div>
+                <b>{x.t}</b>
+                {x.d}
+              </div>
             </div>
           ))}
         </div>

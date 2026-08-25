@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { useLanguage } from '../context/LanguageContext';
+import { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function ComplaintTracker({ complaints }) {
   const { t } = useLanguage();
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const [result, setResult] = useState(null); // { rec, ref } | { notFound: ref }
 
   const trackComplaint = () => {
@@ -36,18 +36,28 @@ export default function ComplaintTracker({ complaints }) {
               <div className="status-steps">
                 {t.stages.map((label, i) => {
                   const currentStage = result.rec ? result.rec.stage : -1;
-                  let cls = '';
-                  if (result.rec) cls = i < currentStage ? 'done' : i === currentStage ? 'current' : '';
+                  let cls = "";
+                  if (result.rec)
+                    cls =
+                      i < currentStage
+                        ? "done"
+                        : i === currentStage
+                          ? "current"
+                          : "";
                   return (
                     <div className={`status-step ${cls}`} key={i}>
-                      <div className="dot">{i < currentStage ? '✓' : i + 1}</div>
+                      <div className="dot">
+                        {i < currentStage ? "✓" : i + 1}
+                      </div>
                       <p>{label}</p>
                     </div>
                   );
                 })}
               </div>
               <div className="status-detail">
-                {result.rec ? t.trackFound(result.ref, result.rec) : t.trackNotFound(result.notFound)}
+                {result.rec
+                  ? t.trackFound(result.ref, result.rec)
+                  : t.trackNotFound(result.notFound)}
               </div>
             </div>
           )}

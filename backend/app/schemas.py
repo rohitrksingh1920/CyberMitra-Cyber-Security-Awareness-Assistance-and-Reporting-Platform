@@ -6,7 +6,7 @@ from pydantic import BaseModel, EmailStr, Field, field_validator
 from app.models import ComplaintStatus, CrimeType
 
 
-# ---------- Complaints ----------
+# Complaints
 
 class ComplaintCreate(BaseModel):
     name: str = Field(min_length=2, max_length=120)
@@ -44,7 +44,7 @@ class ComplaintAdminUpdate(BaseModel):
     admin_notes: Optional[str] = None
 
 
-# ---------- Suspect checker ----------
+# Suspect checker
 
 class SuspectCheckRequest(BaseModel):
     value: str = Field(min_length=3, max_length=200)
@@ -65,7 +65,7 @@ class SuspectReportCreate(BaseModel):
     notes: Optional[str] = Field(default=None, max_length=1000)
 
 
-# ---------- Contact ----------
+# Contact
 
 class ContactCreate(BaseModel):
     name: str = Field(min_length=2, max_length=120)
@@ -74,7 +74,7 @@ class ContactCreate(BaseModel):
     message: str = Field(min_length=5, max_length=3000)
 
 
-# ---------- Quiz ----------
+# Quiz
 
 class QuizResultCreate(BaseModel):
     score: int = Field(ge=0)
@@ -82,7 +82,7 @@ class QuizResultCreate(BaseModel):
     name: Optional[str] = Field(default=None, max_length=120)
 
 
-# ---------- Pledge ----------
+# Pledge
 
 class PledgeCreate(BaseModel):
     name: str = Field(min_length=2, max_length=120)

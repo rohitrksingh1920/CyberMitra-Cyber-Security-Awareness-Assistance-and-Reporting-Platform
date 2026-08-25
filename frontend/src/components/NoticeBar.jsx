@@ -1,5 +1,5 @@
-import { useLanguage } from '../context/LanguageContext';
-import { NOTICES } from '../data/notices';
+import { useLanguage } from "../context/LanguageContext";
+import { NOTICES } from "../data/notices";
 
 export default function NoticeBar() {
   const { lang, t } = useLanguage();
@@ -12,7 +12,9 @@ export default function NoticeBar() {
         <span className="notice-label">{t.noticeLabel}</span>
         <div className="notice-track-outer">
           <div className="notice-track">
-            {doubled.map((n, i) => <span key={i}>{n}</span>)}
+            {doubled.map((n, i) => (
+              <span key={i}>{n}</span>
+            ))}
           </div>
         </div>
       </div>

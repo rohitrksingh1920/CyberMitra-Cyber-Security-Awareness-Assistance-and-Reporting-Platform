@@ -1,8 +1,15 @@
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from "../context/LanguageContext";
 
 const CIRCUMFERENCE = 213.6; // 2 * PI * r(34), matches the SVG ring below
 
-export default function RecoveryPlan({ risk, steps, checklist, onToggleStep, precautions, onFileComplaint }) {
+export default function RecoveryPlan({
+  risk,
+  steps,
+  checklist,
+  onToggleStep,
+  precautions,
+  onFileComplaint,
+}) {
   const { t } = useLanguage();
 
   const total = Object.keys(checklist).length || 1;
@@ -17,12 +24,16 @@ export default function RecoveryPlan({ risk, steps, checklist, onToggleStep, pre
           <div className="risk-dot"></div>
           <div>
             <div className="rlabel">{t.riskLabelPrefix}</div>
-            <div className="rtext">{t.riskLabels[risk]} — {t.riskCopy[risk]}</div>
+            <div className="rtext">
+              {t.riskLabels[risk]} — {t.riskCopy[risk]}
+            </div>
           </div>
         </div>
       </div>
 
-      <h3 style={{ color: '#fff', fontSize: 19, marginBottom: 14 }}>{t.planHeading}</h3>
+      <h3 style={{ color: "#fff", fontSize: 19, marginBottom: 14 }}>
+        {t.planHeading}
+      </h3>
 
       <div className="guide-cols">
         {steps.map((s, i) => {
@@ -30,8 +41,11 @@ export default function RecoveryPlan({ risk, steps, checklist, onToggleStep, pre
           const isDone = !!checklist[id];
           return (
             <div className={`step-card ${s.tag}`} key={id}>
-              <div className={`step-check ${isDone ? 'checked' : ''}`} onClick={() => onToggleStep(id)}></div>
-              <div className={`step-body ${isDone ? 'done' : ''}`}>
+              <div
+                className={`step-check ${isDone ? "checked" : ""}`}
+                onClick={() => onToggleStep(id)}
+              ></div>
+              <div className={`step-body ${isDone ? "done" : ""}`}>
                 <span className={`step-tag ${s.tag}`}>{s.tag}</span>
                 <div className="step-title">{s.title}</div>
                 <p className="desc">{s.desc}</p>
@@ -47,7 +61,9 @@ export default function RecoveryPlan({ risk, steps, checklist, onToggleStep, pre
             <circle className="track" cx="40" cy="40" r="34" />
             <circle
               className="fill"
-              cx="40" cy="40" r="34"
+              cx="40"
+              cy="40"
+              r="34"
               strokeDasharray={CIRCUMFERENCE}
               strokeDashoffset={offset}
             />
@@ -63,15 +79,26 @@ export default function RecoveryPlan({ risk, steps, checklist, onToggleStep, pre
       <div className="precaution-band">
         <h4>{t.precautionHeading}</h4>
         <ul className="precaution-list">
-          {precautions.map((p, i) => <li key={i}>{p}</li>)}
+          {precautions.map((p, i) => (
+            <li key={i}>{p}</li>
+          ))}
         </ul>
       </div>
 
       <div className="sos-actions">
-        <a href="#" className="primary" onClick={(e) => { e.preventDefault(); onFileComplaint(); }}>
+        <a
+          href="#"
+          className="primary"
+          onClick={(e) => {
+            e.preventDefault();
+            onFileComplaint();
+          }}
+        >
           {t.fileComplaintBtn}
         </a>
-        <a href="#contacts" className="secondary">{t.viewContactsBtn}</a>
+        <a href="#contacts" className="secondary">
+          {t.viewContactsBtn}
+        </a>
       </div>
     </div>
   );
