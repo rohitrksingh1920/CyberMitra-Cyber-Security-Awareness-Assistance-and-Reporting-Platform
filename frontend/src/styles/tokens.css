@@ -1,0 +1,145 @@
+/* ==========================================================================
+   CyberMitra design tokens
+   --------------------------------------------------------------------------
+   The palette is lifted straight from the logo: a heavy black ink wordmark cut
+   with horizontal scan-lines, and a burnt-copper subtitle.  Everything else is
+   built from those two colours + warm paper.
+
+   Light theme  = ink on warm paper   (default, follows the OS if no choice made)
+   Dark  theme  = paper on warm black (html[data-theme="dark"])
+
+   Never hard-code a colour in a component: use a token from here so both
+   themes keep working.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* surfaces */
+  --paper: #f3eee5;
+  --paper-2: #ebe4d6;
+  --paper-3: #e2d9c8;
+  --surface: #fbf8f1;
+  --surface-2: #ffffff;
+
+  /* text */
+  --ink: #16120f;
+  --ink-2: #3a332c;
+  --ink-soft: #655c52;
+
+  /* lines */
+  --line: rgba(22, 18, 15, 0.14);
+  --line-strong: rgba(22, 18, 15, 0.34);
+
+  /* brand copper (sampled from the logo subtitle) */
+  --copper: #b5632a;
+  --copper-2: #d98b4e;
+  --copper-ink: #8c4514; /* copper that is safe to use for small text on paper */
+  --on-copper: #fff8ef;
+
+  /* semantic */
+  --safe: #2b7a4b;
+  --safe-bg: #e1eee3;
+  --danger: #b73a2b;
+  --danger-bg: #f5dfd9;
+  --warn-bg: #f6e9cf;
+
+  /* inverted blocks ("section-dark"): warm black in light mode */
+  --inv-bg: #17130f;
+  --inv-surface: #211b16;
+  --inv-ink: #f3ede2;
+  --inv-soft: #b9afa0;
+  --inv-line: rgba(243, 237, 226, 0.15);
+  --inv-copper: #e39a63;
+
+  /* effects */
+  --shadow: 0 1px 0 rgba(22, 18, 15, 0.06), 0 14px 28px -16px rgba(22, 18, 15, 0.32);
+  --shadow-lg: 0 2px 0 rgba(22, 18, 15, 0.08), 0 30px 60px -28px rgba(22, 18, 15, 0.5);
+  --grain-opacity: 0.5;
+  --scan: rgba(22, 18, 15, 0.055);
+  --glass: rgba(243, 238, 229, 0.86);
+  --focus: #b5632a;
+
+  /* simulated phone UIs (WhatsApp replica etc.) */
+  --wa-head: #075e54;
+  --wa-bg: #e9dfcf;
+  --wa-bubble: #ffffff;
+  --wa-ink: #1b1b1b;
+  --mock-bar: #231d18;
+  --mock-bar-ink: #f3ede2;
+  --mock-body: #ffffff;
+  --mock-ink: #1b1b1b;
+  --mock-soft: #6d655b;
+
+  /* type */
+  --font-display: "Unbounded", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible Next", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-hand: "Kalam", "Noto Sans Devanagari", cursive;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --wrap: 1240px;
+
+  /* ---- legacy aliases: inline styles in the old markup still reference these ---- */
+  --navy: var(--ink);
+  --navy-2: var(--ink);
+  --gold: var(--copper);
+  --gold-2: var(--copper-2);
+  --paper-3-legacy: var(--paper-3);
+  --safe-2: var(--safe-bg);
+  --danger-2: var(--danger-bg);
+  --alert: var(--danger);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --paper: #0f0d0b;
+  --paper-2: #151210;
+  --paper-3: #1d1814;
+  --surface: #1a1613;
+  --surface-2: #231d19;
+
+  --ink: #f3ede2;
+  --ink-2: #d9d1c4;
+  --ink-soft: #a59c8f;
+
+  --line: rgba(243, 237, 226, 0.13);
+  --line-strong: rgba(243, 237, 226, 0.3);
+
+  --copper: #d9803f;
+  --copper-2: #eba06a;
+  --copper-ink: #eba06a;
+  --on-copper: #1b0f06;
+
+  --safe: #74c892;
+  --safe-bg: rgba(116, 200, 146, 0.12);
+  --danger: #f28a79;
+  --danger-bg: rgba(242, 138, 121, 0.12);
+  --warn-bg: rgba(235, 160, 106, 0.12);
+
+  --inv-bg: #070605;
+  --inv-surface: #14110e;
+  --inv-ink: #f3ede2;
+  --inv-soft: #a59c8f;
+  --inv-line: rgba(243, 237, 226, 0.14);
+  --inv-copper: #eba06a;
+
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.5), 0 16px 32px -16px rgba(0, 0, 0, 0.8);
+  --shadow-lg: 0 2px 0 rgba(0, 0, 0, 0.5), 0 34px 70px -30px rgba(0, 0, 0, 0.9);
+  --grain-opacity: 0.22;
+  --scan: rgba(243, 237, 226, 0.05);
+  --glass: rgba(15, 13, 11, 0.84);
+  --focus: #eba06a;
+
+  --wa-head: #1f2c34;
+  --wa-bg: #0b141a;
+  --wa-bubble: #202c33;
+  --wa-ink: #e9edef;
+  --mock-bar: #2a231d;
+  --mock-bar-ink: #f3ede2;
+  --mock-body: #202c33;
+  --mock-ink: #e9edef;
+  --mock-soft: #8696a0;
+}

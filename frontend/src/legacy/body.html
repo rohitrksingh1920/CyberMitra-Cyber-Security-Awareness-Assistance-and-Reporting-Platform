@@ -1,0 +1,773 @@
+
+<a class="skip-link" href="#help"><span class="en">Skip to content</span><span class="hi">मुख्य सामग्री पर जाएँ</span></a>
+<header class="topbar" id="topbar"><div class="topbar-inner">
+<a aria-label="CyberMitra – home" class="brand" href="#top"><span class="logo" role="img" aria-label="CyberMitra – Cyber Security Solutions"><i></i><i></i></span></a>
+<nav class="navlinks" id="site-nav" aria-label="Main">
+<a href="#help"><span class="en">Get help</span><span class="hi">मदद पाएँ</span></a>
+<a href="#learn"><span class="en">Learn</span><span class="hi">जानें</span></a>
+<a href="#realcases"><span class="en">Real Cases</span><span class="hi">असली मामले</span></a>
+<a href="#quiz"><span class="en">Quiz</span><span class="hi">क्विज़</span></a>
+<a href="#report"><span class="en">Report</span><span class="hi">रिपोर्ट</span></a>
+<a href="#about" class="cybermitra-about-nav-btn"><span class="en">About Us</span><span class="hi">हमारे बारे में</span></a>
+<button type="button" class="nav-search-link" id="nav-search"><span class="en">🔎 Search the site</span><span class="hi">🔎 साइट में खोजें</span></button>
+</nav>
+<div class="top-actions">
+<button type="button" class="icon-btn search-btn" id="open-palette" aria-label="Search this site" title="Search  (Ctrl + K)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg><span class="label-text en">Search</span><span class="label-text hi">खोजें</span><kbd>Ctrl K</kbd></button>
+<button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode" title="Light / dark mode"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+<div class="lang-toggle" role="group" aria-label="Language">
+<button class="active" id="btn-en" onclick="setLang('en')">EN</button>
+<button id="btn-hi" onclick="setLang('hi')">हिं</button>
+</div>
+<button class="sos-btn" onclick="openSOS()">🆘 <span class="en">SOS</span><span class="hi">SOS</span></button>
+<button type="button" class="icon-btn menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</div>
+</header>
+<div id="top"></div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+<!-- CyberMitra 3D scroll-reactive shield animation -->
+<canvas aria-hidden="true" class="cybermitra-3d-hero" id="cybermitra-3d-hero"></canvas>
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">
+<span class="en">CyberMitra - Cyber Security Solutions · Community Awareness Initiative</span>
+<span class="hi">सायबरमित्र - साइबर सुरक्षा समाधान · सामुदायिक जागरूकता पहल</span>
+</span>
+<h1>
+<span class="en">Spot the <em class="stripe">scam</em> before it spots you.</span>
+<span class="hi"><em class="stripe">धोखा</em> आप तक पहुँचे, उससे पहले उसे पहचानें।</span>
+</h1>
+<p class="lead">
+<span class="en">This is a free, bilingual guide to the scams targeting Indian students, families and
+            first-time internet users — real patterns, real warning signs, and what to do next. Built from our classroom
+            Cyber Safety Awareness Program.</span>
+<span class="hi">यह भारतीय छात्रों, परिवारों और नए इंटरनेट उपयोगकर्ताओं को निशाना बनाने वाले धोखों की एक
+            मुफ़्त, द्विभाषी गाइड है — असली पैटर्न, असली चेतावनी संकेत, और आगे क्या करें। यह हमारे कक्षा साइबर सुरक्षा
+            जागरूकता कार्यक्रम पर आधारित है।</span>
+</p>
+<div class="hero-ctas">
+<a class="btn" href="#help">
+<span class="en">I think I've been scammed</span><span class="hi">मेरे साथ ठगी हुई है</span> <span aria-hidden="true">→</span>
+</a>
+<a class="btn btn-outline" href="#realcases">
+<span class="en">See Real Fraud Patterns</span><span class="hi">असली धोखाधड़ी के तरीके देखें</span>
+</a>
+<span class="hand hero-note" aria-hidden="true"><svg viewBox="0 0 46 32"><path d="M44 4C30 4 14 8 6 24M6 24l1-10M6 24l11-4"/></svg><span class="en">free. no login. promise.</span><span class="hi">मुफ़्त। लॉगिन नहीं।</span></span>
+</div>
+<!-- 3 floating interactive safety windows -->
+<div aria-label="Cyber safety quick actions" class="hero-floating-popups">
+<button class="hero-float-card float-card-one" onclick="openCyberPopup('portal')">
+<span class="float-icon">🛡️</span>
+<span>
+<strong class="float-report-title">Report Cyber Crime</strong>
+<small class="float-report-sub">Open official portal ↗</small>
+</span>
+</button>
+<button class="hero-float-card float-card-two" onclick="openCyberPopup('fir')">
+<span class="float-icon">📄</span>
+<span>
+<strong class="float-fir-title">FIR Format</strong>
+<small class="float-fir-sub">Create a complaint draft</small>
+</span>
+</button>
+<button class="hero-float-card float-card-three" onclick="openSOS()">
+<span class="float-icon">🚨</span>
+<span>
+<strong class="float-help-title">Emergency Help</strong>
+<small class="float-help-sub">Get immediate guidance</small>
+</span>
+</button>
+</div>
+<div class="hero-stats">
+<div class="hero-stat"><b data-count="13">13</b><span class="en">Scam categories covered</span><span class="hi">धोखाधड़ी की श्रेणियाँ</span></div>
+<div class="hero-stat"><b>1930</b><span class="en">National Cyber Crime Helpline</span><span class="hi">राष्ट्रीय साइबर क्राइम हेल्पलाइन</span></div>
+<div class="hero-stat"><b data-count="2">2</b><span class="en">Languages — English &amp; हिन्दी</span><span class="hi">भाषाएँ — English और हिन्दी</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= TRIAGE: "something just happened" ================= -->
+<section class="section-alt" id="help">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Start here if something just happened</span><span class="hi">कुछ अभी हुआ है? यहाँ से शुरू करें</span></span>
+<h2><span class="en">Not sure what to do? Tell us what happened.</span><span class="hi">समझ नहीं आ रहा क्या करें? बताइए क्या हुआ।</span></h2>
+<p><span class="en">Three quick taps and you get a short checklist for your exact situation. Nothing you choose here leaves your device. <span class="hand">(no judgement, promise)</span></span><span class="hi">तीन आसान टैप और आपको आपकी स्थिति के लिए एक छोटी चेकलिस्ट मिलेगी। यहाँ आप जो चुनते हैं वह आपके डिवाइस से बाहर नहीं जाता। <span class="hand">(बिना किसी शर्मिंदगी के)</span></span></p>
+</div>
+<div class="triage-card" id="triage"></div>
+</div>
+</section>
+<!-- ================= WHY ================= -->
+<section class="section-light">
+<div class="wrap">
+<div class="section-head center" style="margin-left:auto;margin-right:auto;">
+<span class="kicker"><span class="en">Why this matters</span><span class="hi">यह क्यों ज़रूरी है</span></span>
+<h2><span class="en">Awareness is still the best firewall</span><span class="hi">जागरूकता ही सबसे अच्छा सुरक्षा
+            कवच है</span></h2>
+<p><span class="en">India has millions of young, first-time internet users. Scammers deliberately target people
+            who are still learning to spot the warning signs — a student who can recognise a scam is far harder to
+            trick.</span>
+<span class="hi">भारत में लाखों युवा, नए इंटरनेट उपयोगकर्ता हैं। धोखेबाज़ जानबूझकर उन लोगों को निशाना बनाते
+            हैं जो अभी खतरे के संकेत पहचानना सीख रहे हैं — जो व्यक्ति धोखा पहचान सकता है, उसे ठगना मुश्किल होता
+            है।</span>
+</p>
+</div>
+<div class="why-grid">
+<div class="why-card">
+<div class="num">01</div>
+<h4><span class="en">Sudden contact</span><span class="hi">अचानक संपर्क</span></h4>
+<p><span class="en">Scams almost always start with an unexpected call, message or email pretending to be
+              someone you trust.</span><span class="hi">धोखाधड़ी लगभग हमेशा एक अचानक कॉल, मैसेज या ईमेल से शुरू होती है
+              जो किसी भरोसेमंद का रूप लेती है।</span></p>
+</div>
+<div class="why-card">
+<div class="num">02</div>
+<h4><span class="en">Manufactured urgency</span><span class="hi">बनावटी जल्दबाज़ी</span></h4>
+<p><span class="en">Fear or excitement is used deliberately so you act before you think.</span><span class="hi">डर या उत्साह जानबूझकर पैदा किया जाता है ताकि आप बिना सोचे कदम उठाएँ।</span></p>
+</div>
+<div class="why-card">
+<div class="num">03</div>
+<h4><span class="en">Money moves the wrong way</span><span class="hi">पैसा उल्टी दिशा में</span></h4>
+<p><span class="en">Real institutions pay you or verify you for free — they never charge a fee to "release"
+              money or a job.</span><span class="hi">असली संस्थाएँ आपको भुगतान करती हैं या मुफ़्त में जाँच करती हैं —
+              पैसे या नौकरी "छोड़ने" के लिए कभी फ़ीस नहीं माँगतीं।</span></p>
+</div>
+<div class="why-card">
+<div class="num">04</div>
+<h4><span class="en">Reporting works</span><span class="hi">रिपोर्ट करना काम करता है</span></h4>
+<p><span class="en">Fast reporting to 1930 within the "golden hour" gives the best chance of freezing stolen
+              money.</span><span class="hi">"गोल्डन ऑवर" के भीतर 1930 पर तुरंत रिपोर्ट करने से चुराए पैसे रोकने की
+              संभावना सबसे ज़्यादा होती है।</span></p>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1px;">
+<div class="why-card">
+<div class="num mono"><span class="en">PROGRAM OBJECTIVES</span><span class="hi">कार्यक्रम के उद्देश्य</span>
+</div>
+<ul style="list-style:none;padding:0;margin:12px 0 0;">
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--safe);">✓</span><span class="en">Help people spot common
+                online threats and scams</span><span class="hi">आम ऑनलाइन खतरे और धोखाधड़ी पहचानने में मदद करना</span>
+</li>
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--safe);">✓</span><span class="en">Teach the warning signs
+                before harm happens</span><span class="hi">नुकसान होने से पहले चेतावनी के संकेत सिखाना</span>
+</li>
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--safe);">✓</span><span class="en">Encourage safe and
+                confident digital behaviour</span><span class="hi">सुरक्षित और आत्मविश्वास से भरा डिजिटल व्यवहार
+                सिखाना</span>
+</li>
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--safe);">✓</span><span class="en">Make sure everyone
+                knows how to report cyber crime</span><span class="hi">हर किसी को साइबर अपराध की रिपोर्ट करना
+                सिखाना</span>
+</li>
+</ul>
+</div>
+<div class="why-card">
+<div class="num mono"><span class="en">HOW TO USE THIS SITE</span><span class="hi">इसे कैसे इस्तेमाल
+              करें</span></div>
+<ul style="list-style:none;padding:0;margin:12px 0 0;">
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--gold);">→</span><span class="en">Read one or two case
+                files at a time</span><span class="hi">एक बार में एक या दो केस फ़ाइलें ही पढ़ें</span>
+</li>
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--gold);">→</span><span class="en">Talk about the warning
+                signs with friends or family</span><span class="hi">चेतावनी संकेतों पर दोस्तों या परिवार से बात
+                करें</span>
+</li>
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--gold);">→</span><span class="en">Keep the Emergency
+                Contacts section handy</span><span class="hi">आपातकालीन संपर्क सेक्शन हाथ में रखें</span>
+</li>
+<li style="font-size:14.5px;color:var(--ink-soft);padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--line);">
+<span style="position:absolute;left:0;color:var(--gold);">→</span><span class="en">Take the pledge and
+                quiz with your class or family</span><span class="hi">अपनी कक्षा या परिवार के साथ शपथ और क्विज़ पूरी
+                करें</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= GLOSSARY ================= -->
+<section class="section-alt">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Good to know</span><span class="hi">जानने योग्य</span></span>
+<h2><span class="en">Simple word guide</span><span class="hi">आसान शब्द गाइड</span></h2>
+<p><span class="en">A few terms used throughout this site, explained simply.</span><span class="hi">इस साइट में
+            इस्तेमाल हुए कुछ शब्दों का आसान अर्थ।</span></p>
+</div>
+<div class="gloss-grid" id="glossary-grid"></div>
+</div>
+</section>
+<!-- ================= LEARN / TOPICS ================= -->
+<section class="section-light" id="learn">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">13 topics · from the classroom program</span><span class="hi">13 विषय ·
+            कक्षा कार्यक्रम से</span></span>
+<h2><span class="en">The case files</span><span class="hi">केस फ़ाइलें</span></h2>
+<p><span class="en">Each exhibit covers one type of scam: the warning signs, what it might look like, and clear
+            do's and don'ts. Tap a card to open it.</span>
+<span class="hi">हर एग्ज़िबिट एक तरह की धोखाधड़ी को कवर करता है: चेतावनी संकेत, यह कैसा दिख सकता है, और साफ़
+            करें व न करें। कार्ड खोलने के लिए उस पर टैप करें।</span>
+</p>
+</div>
+<div class="chiprow" id="topic-filters"></div>
+<div class="exhibit-list" id="topics-list"></div>
+</div>
+</section>
+<!-- ================= RED-FLAG HUNT ================= -->
+<section class="section-alt" id="hunt">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Try it · 2 minutes</span><span class="hi">आज़माएँ · 2 मिनट</span></span>
+<h2><span class="en">Red-flag hunt</span><span class="hi">रेड-फ़्लैग की खोज</span></h2>
+<p><span class="en">Tap every part of the message that looks suspicious. Then check yourself — we'll show what you caught and what slipped past.</span><span class="hi">संदेश के हर संदिग्ध हिस्से पर टैप करें। फिर जाँचें — हम दिखाएँगे कि आपने क्या पकड़ा और क्या छूट गया।</span></p>
+</div>
+<div class="hunt" id="hunt-app"></div>
+</div>
+</section>
+<!-- ================= REAL FRAUD PATTERNS ================= -->
+<section class="section-dark" id="realcases">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Beyond the booklet — current fraud patterns</span><span class="hi">पुस्तिका से आगे — आज के धोखाधड़ी के तरीके</span></span>
+<h2><span class="en">Real-life fraud patterns in India today</span><span class="hi">आज भारत में असली धोखाधड़ी के
+            तरीके</span></h2>
+<p><span class="en">These are dramatised recreations of the exact patterns reported to Indian cyber cells and
+            1930 — press play to hear what the call actually sounds like, read by a synthetic voice. No real victim's
+            recording is used anywhere on this site.</span>
+<span class="hi">यह भारतीय साइबर सेल और 1930 पर दर्ज हुए असली पैटर्न के नाटकीय पुनर्निर्माण हैं — कॉल असल में
+            कैसी सुनाई देती है यह सुनने के लिए प्ले दबाएँ, इसे एक सिंथेटिक आवाज़ पढ़ती है। इस साइट पर कहीं भी किसी असली
+            पीड़ित की रिकॉर्डिंग इस्तेमाल नहीं की गई है।</span>
+</p>
+</div>
+<div class="rl-grid" id="realcases-grid"></div>
+</div>
+</section>
+<!-- ================= MYTH VS FACT ================= -->
+<section class="section-light">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Common misconceptions</span><span class="hi">आम भ्रम</span></span>
+<h2><span class="en">Myth vs fact</span><span class="hi">भ्रम बनाम सच्चाई</span></h2>
+</div>
+<div class="mf-grid" id="myth-grid"></div>
+</div>
+</section>
+<!-- ================= QUIZ ================= -->
+<section class="section-alt" id="quiz">
+<div class="wrap">
+<div class="section-head center" style="margin-left:auto;margin-right:auto;">
+<span class="kicker"><span class="en">Test yourself</span><span class="hi">खुद को परखें</span></span>
+<h2><span class="en">Quick quiz</span><span class="hi">छोटी क्विज़</span></h2>
+<p><span class="en">Five real scenarios. See how many you can spot.</span><span class="hi">पाँच असली
+            परिस्थितियाँ। देखें आप कितनी पहचान पाते हैं।</span></p>
+</div>
+<div class="quiz-card">
+<div id="quiz-active">
+<div class="quiz-progress" id="quiz-progress"></div>
+<div class="qbar" id="quiz-qbar" aria-hidden="true"></div>
+<div class="quiz-q" id="quiz-q"></div>
+<div class="quiz-opts" id="quiz-opts"></div>
+<div class="quiz-feedback" id="quiz-feedback"></div>
+<div class="quiz-nav">
+<span class="quiz-score" id="quiz-score-live"></span>
+<button class="btn-small" disabled="" id="quiz-next" onclick="quizNext()"><span class="en">Next →</span><span class="hi">आगे →</span></button>
+</div>
+</div>
+<div class="quiz-result" id="quiz-result">
+<span class="en">You scored</span><span class="hi">आपका स्कोर</span>
+<div class="score-big" id="quiz-final-score">0/5</div>
+<p id="quiz-result-msg"></p>
+<button class="btn-small" onclick="quizRestart()"><span class="en">Try again</span><span class="hi">फिर कोशिश
+              करें</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PLEDGE ================= -->
+<!-- ================= 13 RULES ================= -->
+<section class="section-dark">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Quick reference</span><span class="hi">त्वरित संदर्भ</span></span>
+<h2><span class="en">13 rules in 13 lines</span><span class="hi">13 पंक्तियों में 13 नियम</span></h2>
+</div>
+<div class="rules-grid" id="rules-grid"></div>
+</div>
+</section>
+<!-- ================= REPORT ================= -->
+<section class="section-light" id="report">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">If it happens to you</span><span class="hi">अगर आपके साथ हो</span></span>
+<h2><span class="en">Reporting cyber crime</span><span class="hi">साइबर अपराध की रिपोर्ट</span></h2>
+<p><span class="en">Report early — for financial fraud, speed gives the best chance of getting money
+            back.</span><span class="hi">जल्दी रिपोर्ट करें — वित्तीय धोखाधड़ी में तेज़ी से पैसा वापस मिलने की संभावना
+            सबसे ज़्यादा होती है।</span></p>
+</div>
+<div class="report-grid">
+<div class="report-card">
+<div class="mono" style="font-size:12px;color:var(--ink-soft);"><span class="en">CALL</span><span class="hi">कॉल करें</span></div>
+<div class="big">1930</div>
+<p><span class="en">National Cyber Crime Helpline — toll-free, for urgent financial fraud.</span><span class="hi">राष्ट्रीय साइबर क्राइम हेल्पलाइन — टोल-फ्री, तुरंत वित्तीय धोखाधड़ी के लिए।</span></p>
+</div>
+<div class="report-card">
+<div class="mono" style="font-size:12px;color:var(--ink-soft);"><span class="en">ONLINE</span><span class="hi">ऑनलाइन</span></div>
+<a href="https://cybercrime.gov.in/">
+<div class="big" style="font-size:20px;">cybercrime.gov.in</div>
+</a>
+<p><span class="en">File a complaint with evidence, for any cyber crime, any time.</span><span class="hi">किसी
+              भी समय, किसी भी साइबर अपराध की शिकायत सबूत के साथ दर्ज करें।</span></p>
+</div>
+</div>
+<div class="checklist">
+<h4><span class="en">Before you report, keep ready:</span><span class="hi">रिपोर्ट से पहले यह तैयार रखें:</span>
+</h4>
+<ul id="checklist-items"></ul>
+</div>
+</div>
+</section>
+<!-- ================= CYBERMITRA VIDEO + COMPLAINT STEPS ================= -->
+<section class="cybermitra-video-section" id="complaint-guide">
+<div class="wrap cybermitra-video-wrap">
+<div class="section-head center">
+<span class="kicker">
+<span class="en">Watch &amp; act</span>
+<span class="hi">वीडियो देखें और कार्रवाई करें</span>
+</span>
+<h2>
+<span class="en">How to file a cyber crime complaint</span>
+<span class="hi">साइबर अपराध की शिकायत कैसे दर्ज करें</span>
+</h2>
+<p>
+<span class="en">Watch the video below, then follow the official steps to report a cyber crime online.</span>
+<span class="hi">नीचे दिया गया वीडियो देखें और फिर साइबर अपराध की ऑनलाइन शिकायत दर्ज करने के लिए आधिकारिक
+            चरणों का पालन करें।</span>
+</p>
+</div>
+<div class="cybermitra-video-card">
+<video class="cybermitra-video" controls="" playsinline="" preload="metadata">
+<source src="cybermitra-awareness-video.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+<div class="cybermitra-video-caption">
+<span class="en">Cyber safety awareness video.</span>
+<span class="hi">साइबर सुरक्षा जागरूकता वीडियो।</span>
+</div>
+</div>
+<div class="cybermitra-report-steps">
+<div class="cybermitra-step">
+<div class="cybermitra-step-num">1</div>
+<div>
+<h4><span class="en">Open the official portal</span><span class="hi">आधिकारिक पोर्टल खोलें</span></h4>
+<p><span class="en">Go to cybercrime.gov.in and choose the appropriate complaint option, such as Financial
+                Fraud or Other Cyber Crime.</span><span class="hi">cybercrime.gov.in खोलें और उपयुक्त शिकायत विकल्प
+                चुनें, जैसे Financial Fraud या Other Cyber Crime।</span></p>
+</div>
+</div>
+<div class="cybermitra-step">
+<div class="cybermitra-step-num">2</div>
+<div>
+<h4><span class="en">Register with your mobile number</span><span class="hi">मोबाइल नंबर से पंजीकरण
+                करें</span></h4>
+<p><span class="en">Enter your name and valid Indian mobile number, request an OTP, and complete
+                verification.</span><span class="hi">अपना नाम और वैध भारतीय मोबाइल नंबर दर्ज करें, OTP प्राप्त करें और
+                सत्यापन पूरा करें।</span></p>
+</div>
+</div>
+<div class="cybermitra-step">
+<div class="cybermitra-step-num">3</div>
+<div>
+<h4><span class="en">Select the cyber crime category</span><span class="hi">साइबर अपराध की श्रेणी
+                चुनें</span></h4>
+<p><span class="en">Select the category and sub-category that best matches what happened.</span><span class="hi">आपके साथ हुई घटना के अनुसार सही श्रेणी और उप-श्रेणी चुनें।</span></p>
+</div>
+</div>
+<div class="cybermitra-step">
+<div class="cybermitra-step-num">4</div>
+<div>
+<h4><span class="en">Enter incident details</span><span class="hi">घटना की जानकारी भरें</span></h4>
+<p><span class="en">Provide the incident date/time, location, what happened, and other required details.
+                Give accurate and complete information.</span><span class="hi">घटना की तारीख/समय, स्थान, क्या हुआ और
+                अन्य आवश्यक जानकारी भरें। सही और पूरी जानकारी दें।</span></p>
+</div>
+</div>
+<div class="cybermitra-step">
+<div class="cybermitra-step-num">5</div>
+<div>
+<h4><span class="en">Upload evidence</span><span class="hi">सबूत अपलोड करें</span></h4>
+<p><span class="en">Keep screenshots, chats, emails, URLs, transaction receipts/UTR numbers, phone numbers,
+                images, videos and other relevant documents ready.</span><span class="hi">स्क्रीनशॉट, चैट, ईमेल, URL,
+                ट्रांजैक्शन रसीद/UTR नंबर, फोन नंबर, फोटो, वीडियो और अन्य संबंधित दस्तावेज़ तैयार रखें।</span></p>
+</div>
+</div>
+<div class="cybermitra-step">
+<div class="cybermitra-step-num">6</div>
+<div>
+<h4><span class="en">Submit and save the acknowledgement</span><span class="hi">शिकायत जमा करें और रसीद
+                सुरक्षित रखें</span></h4>
+<p><span class="en">Review the information, submit the complaint, and save the complaint/reference number so
+                you can track its status later.</span><span class="hi">जानकारी जाँचकर शिकायत जमा करें और शिकायत/रेफरेंस
+                नंबर सुरक्षित रखें ताकि बाद में स्थिति देख सकें।</span></p>
+</div>
+</div>
+</div>
+<div class="cybermitra-report-note">
+<strong>
+<span class="en">Important:</span>
+<span class="hi">महत्वपूर्ण:</span>
+</strong>
+<span class="en"> For financial cyber fraud, report immediately by calling 1930 and also file the complaint
+          online. Do not delete evidence.</span>
+<span class="hi"> वित्तीय साइबर धोखाधड़ी में तुरंत 1930 पर कॉल करें और ऑनलाइन शिकायत भी दर्ज करें। सबूत डिलीट न
+          करें।</span>
+<br/>
+<a class="cybermitra-report-link" href="https://cybercrime.gov.in/" rel="noopener noreferrer" target="_blank">
+<span class="en">Open cybercrime.gov.in →</span>
+<span class="hi">cybercrime.gov.in खोलें →</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= CONTACTS ================= -->
+<section class="section-alt">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker"><span class="en">Keep this handy</span><span class="hi">यह संभालकर रखें</span></span>
+<h2><span class="en">Emergency contacts &amp; helplines</span><span class="hi">आपातकालीन संपर्क व
+            हेल्पलाइन</span></h2>
+</div>
+<table class="contact-table" id="contact-table"></table>
+</div>
+</section>
+
+<section id="about" class="cybermitra-about-section">
+  <div class="cybermitra-about-inner">
+    <div class="cybermitra-about-kicker"><span class="en">ABOUT US</span><span class="hi">हमारे बारे में</span></div>
+    <div class="cybermitra-about-grid">
+      <div>
+        <h2><span class="en">CyberMitra — your practical guide to staying safe online.</span><span class="hi">CyberMitra — ऑनलाइन सुरक्षित रहने के लिए आपका व्यावहारिक मार्गदर्शक।</span></h2>
+        <p><span class="en">CyberMitra is a bilingual cyber-safety awareness website created to help everyday internet users recognise common cyber scams, understand warning signs, and know what to do next. It brings practical awareness, simulated cases, prevention guidance and reporting information together in one place.</span><span class="hi">CyberMitra एक द्विभाषी साइबर-सुरक्षा जागरूकता वेबसाइट है जो इंटरनेट उपयोगकर्ताओं को आम साइबर धोखाधड़ी पहचानने, चेतावनी संकेत समझने और सही अगला कदम जानने में मदद करती है। यह जागरूकता, सिम्युलेटेड केस, बचाव के सुझाव और रिपोर्टिंग जानकारी को एक जगह उपलब्ध कराती है।</span></p>
+      </div>
+      <div class="cybermitra-about-card">
+        <h3><span class="en">Website features</span><span class="hi">वेबसाइट की विशेषताएँ</span></h3>
+        <ul>
+          <li><span class="en">English / Hindi cyber-safety guidance</span><span class="hi">अंग्रेज़ी / हिंदी साइबर-सुरक्षा मार्गदर्शन</span></li>
+          <li><span class="en">13 real-world cyber scam case files</span><span class="hi">13 वास्तविक साइबर धोखाधड़ी केस फाइलें</span></li>
+          <li><span class="en">Simulated scam messages and warning signs</span><span class="hi">सिम्युलेटेड धोखाधड़ी संदेश और चेतावनी संकेत</span></li>
+          <li><span class="en">Interactive cyber-safety learning content</span><span class="hi">इंटरैक्टिव साइबर-सुरक्षा सीखने की सामग्री</span></li>
+          <li><span class="en">Cyber-safety quiz and practical rules</span><span class="hi">साइबर-सुरक्षा क्विज़ और व्यावहारिक नियम</span></li>
+          <li><span class="en">Step-by-step cyber crime reporting guidance</span><span class="hi">साइबर क्राइम रिपोर्ट करने की चरण-दर-चरण जानकारी</span></li>
+          <li><span class="en">Emergency helplines and reporting portal</span><span class="hi">आपातकालीन हेल्पलाइन और रिपोर्टिंग पोर्टल</span></li>
+          <li><span class="en">Evidence checklist and incident-response guidance</span><span class="hi">सबूत चेकलिस्ट और घटना-प्रतिक्रिया मार्गदर्शन</span></li>
+          <li><span class="en">Cyber-safety awareness video</span><span class="hi">साइबर-सुरक्षा जागरूकता वीडियो</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cybermitra-about-note"><span class="en"><strong>Our goal:</strong> make cyber-safety information simple to understand, easy to remember, and practical to use when it matters.</span><span class="hi"><strong>हमारा लक्ष्य:</strong> साइबर-सुरक्षा की जानकारी को समझने, याद रखने और जरूरत के समय उपयोग करने योग्य बनाना है।</span></div>
+  </div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<div class="brand-logo">
+<img alt="CyberMitra" class="site-logo" src="/cybermitra-sticker-logo-sm.png" width="270" height="82" loading="lazy"/>
+</div>
+<p style="max-width:34ch;">
+<span class="en">An awareness initiative by the CyberMitra - Cyber Security Solutions, built from our Cyber Safety
+              Awareness Program for Government Schools.</span>
+<span class="hi">यह CyberMitra - Cyber Security Solutions की एक जागरूकता पहल है, जो हमारे सरकारी स्कूलों के लिए साइबर
+              सुरक्षा जागरूकता कार्यक्रम पर आधारित है।</span>
+</p>
+<p class="foot-human" style="max-width:34ch;margin-top:14px;font-family:var(--font-hand);font-size:20px;line-height:1.25;color:var(--inv-copper);transform:rotate(-1.5deg);"><span class="en">Made by students, for anyone who's ever got a message that felt a little off.</span><span class="hi">छात्रों ने बनाया है — हर उस व्यक्ति के लिए जिसे कभी कोई संदेश थोड़ा अजीब लगा हो।</span></p>
+
+</div>
+<div>
+<div style="font-family:var(--font-mono);font-size:12px;color:var(--gold-2);margin-bottom:10px;letter-spacing:.08em;">
+<span class="en">EMERGENCY</span><span class="hi">आपातकाल</span>
+</div>
+<p>1930 · <a href="https://cybercrime.gov.in/" rel="noopener noreferrer" target="_blank">cybercrime.gov.in</a><br/>Women: 1091 · Child: 1098 · Police: 112</p>
+</div>
+<div>
+<div style="font-family:var(--font-mono);font-size:12px;color:var(--gold-2);margin-bottom:10px;letter-spacing:.08em;">
+<span class="en">CONTACT</span><span class="hi">संपर्क</span>
+</div>
+<p><a href="mailto:rakshitkamboj2@gmail.com">rakshitkamboj2@gmail.com</a><br/><a href="mailto:rohitrk.singh1920@gmail.com">rohitrk.singh1920@gmail.com</a></p>
+</div>
+</div>
+<div class="foot-disclaimer">
+<span class="en">All message, call and screen mockups on this site are simulated recreations built for teaching
+          purposes — they are not real messages, real recordings, or real victims. Audio playback uses on-device
+          text-to-speech, not archival recordings. This site provides general awareness information, not legal
+          advice.</span>
+<span class="hi">इस साइट पर मौजूद सभी मैसेज, कॉल और स्क्रीन के उदाहरण सिखाने के उद्देश्य से बनाए गए काल्पनिक
+          पुनर्निर्माण हैं — ये असली मैसेज, असली रिकॉर्डिंग या असली पीड़ित नहीं हैं। ऑडियो प्लेबैक डिवाइस की
+          टेक्स्ट-टू-स्पीच सुविधा से बनता है, किसी संग्रहीत रिकॉर्डिंग से नहीं। यह साइट सामान्य जागरूकता जानकारी देती
+          है, कानूनी सलाह नहीं।</span>
+</div>
+<div class="cybermitra-back-to-top-wrap">
+<button type="button" id="cybermitra-back-to-top" class="cybermitra-back-to-top" onclick="window.scrollTo({top:0,behavior:&quot;smooth&quot;})">
+  <span class="en">Back to top ↑</span><span class="hi">ऊपर जाएँ ↑</span>
+</button>
+</div>
+</div>
+</footer>
+<!-- SOS floating button (secondary) -->
+<button class="sos-float" onclick="openSOS()">🆘 SOS</button>
+<!-- SOS Modal -->
+<div class="modal-overlay" id="sos-modal">
+<div class="modal">
+<button class="modal-close" onclick="closeSOS()">×</button>
+<h3><span class="en">In danger or losing money right now?</span><span class="hi">अभी खतरे में हैं या पैसा जा रहा
+          है?</span></h3>
+<p class="sub"><span class="en">Call immediately. Every minute matters for freezing a fraudulent
+          transfer.</span><span class="hi">तुरंत कॉल करें। धोखाधड़ी से हुए ट्रांसफ़र को रोकने के लिए हर मिनट मायने रखता
+          है।</span></p>
+<ul class="modal-contacts">
+<li><span class="label"><span class="en">National Cyber Crime Helpline</span><span class="hi">साइबर क्राइम
+              हेल्पलाइन</span></span><span class="val">1930</span></li>
+<li><span class="label"><span class="en">Police Emergency</span><span class="hi">पुलिस
+              आपातकालीन</span></span><span class="val">112</span></li>
+<li><span class="label"><span class="en">Women's Helpline</span><span class="hi">महिला
+              हेल्पलाइन</span></span><span class="val">1091</span></li>
+<li><span class="label"><span class="en">Child Helpline</span><span class="hi">चाइल्ड
+              हेल्पलाइन</span></span><span class="val">1098</span></li>
+<li><span class="label"><span class="en">Report online</span><span class="hi">ऑनलाइन रिपोर्ट</span></span><a class="val sos-cybercrime-link" href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer" style="font-size:12.5px;">cybercrime.gov.in ↗</a></li>
+</ul>
+<div class="modal-note"><span class="en">Tip: if a payment was just made, also call your bank's helpline to
+          request an immediate hold.</span><span class="hi">सुझाव: अगर अभी भुगतान हुआ है, तो अपने बैंक की हेल्पलाइन पर
+          कॉल कर तुरंत होल्ड करवाएँ।</span></div>
+</div>
+</div>
+
+<!-- CyberMitra additional interactive popup: added without removing existing content -->
+<div class="cyber-extra-modal" id="cyber-extra-modal">
+<div class="cyber-extra-card">
+<button class="cyber-extra-close" onclick="closeCyberPopup()">×</button>
+<h3>
+<span class="en">Cyber Crime Reporting</span>
+<span class="hi">साइबर अपराध रिपोर्टिंग</span>
+</h3>
+<div class="cyber-tabs">
+<button class="cyber-tab active" id="cyber-tab-portal" onclick="showCyberPanel('portal')">
+<span class="en">Official Portal</span><span class="hi">आधिकारिक पोर्टल</span>
+</button>
+<button class="cyber-tab" id="cyber-tab-fir" onclick="showCyberPanel('fir')">
+<span class="en">FIR Format</span><span class="hi">FIR प्रारूप</span>
+</button>
+<button class="cyber-tab" id="cyber-tab-track" onclick="showCyberPanel('track')">
+<span class="en">Track Complaint</span><span class="hi">शिकायत ट्रैक करें</span>
+</button>
+<button class="cyber-tab" id="cyber-tab-check" onclick="showCyberPanel('check')">
+<span class="en">Check a Number/Link</span><span class="hi">नंबर/लिंक जाँचें</span>
+</button>
+</div>
+<div class="cyber-panel show" id="cyber-panel-portal">
+<div class="cyber-official">
+<h4><span class="en">National Cyber Crime Reporting Portal</span><span class="hi">राष्ट्रीय साइबर अपराध
+              रिपोर्टिंग पोर्टल</span></h4>
+<p>
+<span class="en">Use the official Government of India portal to report a cyber crime online.</span>
+<span class="hi">साइबर अपराध की ऑनलाइन शिकायत दर्ज करने के लिए भारत सरकार के आधिकारिक पोर्टल का उपयोग
+              करें।</span>
+</p>
+<a href="https://cybercrime.gov.in/" rel="noopener noreferrer" target="_blank">
+            🌐 <span class="en">Open cybercrime.gov.in ↗</span><span class="hi">cybercrime.gov.in खोलें ↗</span>
+</a>
+</div>
+<div class="cyber-note">
+<b><span class="en">Urgent financial fraud:</span><span class="hi">तुरंत हुई वित्तीय धोखाधड़ी:</span></b>
+<span class="en">Call <strong>1930</strong> immediately and then complete the online complaint.</span>
+<span class="hi">तुरंत <strong>1930</strong> पर कॉल करें और फिर ऑनलाइन शिकायत पूरी करें।</span>
+</div>
+</div>
+<div class="cyber-panel" id="cyber-panel-fir">
+<div class="cyber-note">
+<span class="en"><b>FIR / Complaint Draft Helper:</b> This creates a draft only. It does not submit an
+            FIR.</span>
+<span class="hi"><b>FIR / शिकायत ड्राफ्ट सहायक:</b> यह केवल ड्राफ्ट बनाता है। FIR अपने आप जमा नहीं
+            होती।</span>
+</div>
+<div class="cyber-fir-grid" style="margin-top:15px">
+<div class="cyber-fir-field">
+<label><span class="en">Name</span><span class="hi">नाम</span></label>
+<input id="cyber-fir-name"/>
+</div>
+<div class="cyber-fir-field">
+<label><span class="en">Contact Number</span><span class="hi">संपर्क नंबर</span></label>
+<input id="cyber-fir-phone"/>
+</div>
+<div class="cyber-fir-field">
+<label><span class="en">Incident Date</span><span class="hi">घटना की तारीख</span></label>
+<input id="cyber-fir-date" type="date"/>
+</div>
+<div class="cyber-fir-field">
+<label><span class="en">Crime Type</span><span class="hi">अपराध का प्रकार</span></label>
+<select id="cyber-fir-type">
+<option>Financial Fraud / वित्तीय धोखाधड़ी</option>
+<option>Phishing / फ़िशिंग</option>
+<option>Account Hacking / अकाउंट हैकिंग</option>
+<option>Identity Theft / पहचान की चोरी</option>
+<option>Online Harassment / ऑनलाइन उत्पीड़न</option>
+<option>Other / अन्य</option>
+</select>
+</div>
+<div class="cyber-fir-field full">
+<label><span class="en">Incident Description</span><span class="hi">घटना का विवरण</span></label>
+<textarea id="cyber-fir-desc"></textarea>
+</div>
+<div class="cyber-fir-field full">
+<label><span class="en">Evidence</span><span class="hi">सबूत</span></label>
+<textarea id="cyber-fir-evidence"></textarea>
+</div>
+</div>
+<div class="cyber-fir-actions">
+<button onclick="generateCyberFIR()"><span class="en">Generate Draft</span><span class="hi">ड्राफ्ट
+              बनाएँ</span></button>
+<button onclick="copyCyberFIR()"><span class="en">Copy</span><span class="hi">कॉपी करें</span></button>
+<button class="cyber-fir-submit" id="cyber-fir-submit-btn" onclick="submitCyberComplaint()"><span class="en">Submit to CyberMitra &amp; Get Reference No.</span><span class="hi">CyberMitra में जमा करें और संदर्भ संख्या पाएँ</span></button>
+<a href="https://cybercrime.gov.in/" rel="noopener noreferrer" target="_blank">
+<span class="en">Official Portal ↗</span><span class="hi">आधिकारिक पोर्टल ↗</span>
+</a>
+</div>
+<div class="cyber-fir-note-small">
+<span class="en">Note: Submitting here saves a draft with CyberMitra for your own tracking. It is <b>not</b> an official FIR — always also file at cybercrime.gov.in or call 1930 for urgent financial fraud.</span>
+<span class="hi">नोट: यहाँ जमा करने से आपके अपने ट्रैकिंग के लिए CyberMitra के पास एक ड्राफ्ट सुरक्षित हो जाता है। यह आधिकारिक FIR <b>नहीं</b> है — तत्काल वित्तीय धोखाधड़ी के लिए हमेशा cybercrime.gov.in पर भी शिकायत दर्ज करें या 1930 पर कॉल करें।</span>
+</div>
+<div class="cyber-fir-output" id="cyber-fir-output"></div>
+<div class="cyber-fir-refbox" id="cyber-fir-refbox"></div>
+</div>
+
+<div class="cyber-panel" id="cyber-panel-track">
+<div class="cyber-note">
+<span class="en"><b>Track your complaint:</b> Enter the reference code you received when you submitted a draft (looks like CM-20260822-AB12CD).</span>
+<span class="hi"><b>अपनी शिकायत ट्रैक करें:</b> ड्राफ्ट जमा करते समय मिला संदर्भ कोड दर्ज करें (जैसे CM-20260822-AB12CD)।</span>
+</div>
+<div class="cyber-fir-grid" style="margin-top:15px">
+<div class="cyber-fir-field full">
+<label><span class="en">Reference Code</span><span class="hi">संदर्भ कोड</span></label>
+<input id="cyber-track-ref" placeholder="CM-20260822-AB12CD"/>
+</div>
+</div>
+<div class="cyber-fir-actions">
+<button onclick="trackCyberComplaint()"><span class="en">Track</span><span class="hi">ट्रैक करें</span></button>
+</div>
+<div class="cyber-fir-output" id="cyber-track-output"></div>
+</div>
+
+<div class="cyber-panel" id="cyber-panel-check">
+<div class="cyber-note">
+<span class="en"><b>Check a suspicious number, UPI ID, or link:</b> See if other CyberMitra users have already reported it. This is community data, not an official blocklist.</span>
+<span class="hi"><b>संदिग्ध नंबर, UPI ID या लिंक जाँचें:</b> देखें कि क्या इसे पहले से किसी अन्य CyberMitra उपयोगकर्ता ने रिपोर्ट किया है। यह सामुदायिक जानकारी है, आधिकारिक ब्लॉकलिस्ट नहीं।</span>
+</div>
+<div class="cyber-fir-grid" style="margin-top:15px">
+<div class="cyber-fir-field">
+<label><span class="en">Type</span><span class="hi">प्रकार</span></label>
+<select id="cyber-check-type">
+<option value="phone">Phone Number</option>
+<option value="upi">UPI ID</option>
+<option value="url">Website / Link</option>
+</select>
+</div>
+<div class="cyber-fir-field">
+<label><span class="en">Value</span><span class="hi">मान</span></label>
+<input id="cyber-check-value" placeholder="e.g. 98XXXXXXXX / name@upi / suspicious-site.com"/>
+</div>
+</div>
+<div class="cyber-fir-actions">
+<button onclick="checkSuspectEntity()"><span class="en">Check</span><span class="hi">जाँचें</span></button>
+<button onclick="reportSuspectEntity()"><span class="en">Report This</span><span class="hi">इसे रिपोर्ट करें</span></button>
+</div>
+<div class="cyber-fir-output" id="cyber-check-output"></div>
+</div>
+</div>
+</div>
+
+
+<!-- CyberMitra LANDING CHOICE — added without changing existing website sections -->
+<div aria-hidden="true" class="cybermitra-landing" id="cybermitra-landing">
+<div class="cybermitra-landing-card">
+<button aria-label="Close" class="cybermitra-landing-close" onclick="closeCyberMitraLanding()">×</button>
+<div class="cybermitra-landing-top">
+<div class="cybermitra-landing-icon">🛡️</div>
+<div>
+<div class="cybermitra-landing-kicker">
+<span class="en">CyberMitra - Cyber Security Solutions</span>
+<span class="hi">सायबरमित्र - साइबर सुरक्षा समाधान</span>
+</div>
+<h2>
+<span class="en">How can we help you today?</span>
+<span class="hi">आज हम आपकी कैसे मदद कर सकते हैं?</span>
+</h2>
+<p>
+<span class="en">Choose an option to continue.</span>
+<span class="hi">आगे बढ़ने के लिए एक विकल्प चुनें।</span>
+</p>
+<div class="cybermitra-language-picker" aria-label="Choose language">
+  <span class="cybermitra-language-label">Language / भाषा</span>
+  <button type="button" class="cybermitra-language-btn active" data-cybermitra-lang="en" onclick="setLang('en')">English</button>
+  <button type="button" class="cybermitra-language-btn" data-cybermitra-lang="hi" onclick="setLang('hi')">हिन्दी</button>
+</div>
+</div>
+</div>
+<div class="cybermitra-landing-options">
+<button class="cybermitra-option cybermitra-victim" onclick="chooseCyberMitraVictim()">
+<span class="cybermitra-option-icon">🚨</span>
+<span class="cybermitra-option-body">
+<strong>
+<span class="en">I am a victim of cybercrime</span>
+<span class="hi">मैं साइबर अपराध का पीड़ित हूँ</span>
+</strong>
+<small>
+<span class="en">Report the incident, open the official cybercrime portal or prepare an FIR format.</span>
+<span class="hi">घटना की रिपोर्ट करें, आधिकारिक साइबर अपराध पोर्टल खोलें या FIR प्रारूप तैयार करें।</span>
+</small>
+<b>
+<span class="en">Get emergency help →</span>
+<span class="hi">आपातकालीन सहायता लें →</span>
+</b>
+</span>
+</button>
+<button class="cybermitra-option cybermitra-learner" onclick="chooseCyberMitraLearner()">
+<span class="cybermitra-option-icon">📚</span>
+<span class="cybermitra-option-body">
+<strong>
+<span class="en">I want to learn about cyber safety</span>
+<span class="hi">मैं साइबर सुरक्षा के बारे में सीखना चाहता हूँ</span>
+</strong>
+<small>
+<span class="en">Learn about scams, warning signs, safe online habits and what to do next.</span>
+<span class="hi">धोखाधड़ी, चेतावनी संकेत, सुरक्षित ऑनलाइन आदतें और आगे क्या करना है, सीखें।</span>
+</small>
+<b>
+<span class="en">Start learning →</span>
+<span class="hi">सीखना शुरू करें →</span>
+</b>
+</span>
+</button>
+</div>
+<div class="cybermitra-landing-note">
+<span class="en"><b>Urgent financial fraud?</b> Call <strong>1930</strong> immediately.</span>
+<span class="hi"><b>तुरंत वित्तीय धोखाधड़ी?</b> तुरंत <strong>1930</strong> पर कॉल करें।</span>
+</div>
+</div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+<div class="palette-box">
+<div class="palette-input-row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg><input class="palette-input" id="palette-input" type="text" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-label="Search the site"/></div>
+<div class="palette-list" id="palette-list" role="listbox"></div>
+<div class="palette-foot"><span><kbd>↑</kbd> <kbd>↓</kbd> <span class="en">move</span><span class="hi">चुनें</span></span><span><kbd>Enter</kbd> <span class="en">open</span><span class="hi">खोलें</span></span><span><kbd>Esc</kbd> <span class="en">close</span><span class="hi">बंद</span></span></div>
+</div>
+</div>
