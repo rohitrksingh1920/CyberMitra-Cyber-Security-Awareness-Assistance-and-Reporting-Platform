@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberMitra — Cyber Security Solutions · spot the scam before it spots you</title>
+    <title>
+      CyberMitra — Cyber Security Solutions · spot the scam before it spots you
+    </title>
     <meta
       name="description"
       content="A free, bilingual (English / हिन्दी) guide to online scams in India: real fraud patterns, what to do if something just happened, and how to report to 1930 and cybercrime.gov.in."
     />
     <meta name="theme-color" content="#f3eee5" />
     <meta property="og:title" content="CyberMitra — Cyber Security Solutions" />
-    <meta property="og:description" content="Spot the scam before it spots you. Free, bilingual cyber-safety guide for India." />
+    <meta
+      property="og:description"
+      content="Spot the scam before it spots you. Free, bilingual cyber-safety guide for India."
+    />
     <meta property="og:image" content="/cybermitra-sticker-logo.png" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -21,18 +26,31 @@
         var theme = "light";
         try {
           var saved = localStorage.getItem("cybermitra-theme");
-          theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          theme =
+            saved ||
+            (window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light");
         } catch (e) {}
         document.documentElement.setAttribute("data-theme", theme);
       })();
     </script>
     <style>
-      html { background: #f3eee5; }
-      html[data-theme="dark"] { background: #0f0d0b; }
+      html {
+        background: #f3eee5;
+      }
+      html[data-theme="dark"] {
+        background: #0f0d0b;
+      }
     </style>
   </head>
   <body>
-    <noscript>CyberMitra needs JavaScript. If something just happened to you, call 1930 (National Cyber Crime Helpline) or visit https://cybercrime.gov.in</noscript>
+    <noscript
+      >CyberMitra needs JavaScript. If something just happened to you, call 1930
+      (National Cyber Crime Helpline) or visit
+      https://cybercrime.gov.in</noscript
+    >
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

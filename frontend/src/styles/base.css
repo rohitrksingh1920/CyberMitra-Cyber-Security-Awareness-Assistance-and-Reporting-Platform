@@ -153,7 +153,11 @@ html[data-lang="hi"] .hi.block {
 /* a band of thin horizontal rules, used as a divider */
 .scan-rule {
   height: 13px;
-  background: repeating-linear-gradient(to bottom, var(--ink) 0 2px, transparent 2px 5px);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0 2px,
+    transparent 2px 5px
+  );
   opacity: 0.9;
 }
 
@@ -163,7 +167,11 @@ html[data-lang="hi"] .hi.block {
   display: inline-block;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  background: repeating-linear-gradient(to bottom, var(--ink) 0 0.075em, transparent 0.075em 0.125em);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0 0.075em,
+    transparent 0.075em 0.125em
+  );
   -webkit-background-clip: text;
   background-clip: text;
   padding: 0 0.04em;
@@ -185,7 +193,11 @@ html[data-lang="hi"] .stripe {
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s, color 0.2s;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.2s,
+    color 0.2s;
 }
 
 .btn {
@@ -263,7 +275,9 @@ html[data-lang="hi"] .stripe {
 .sv-reveal {
   opacity: 0;
   transform: translateY(22px);
-  transition: opacity 0.65s cubic-bezier(0.22, 0.68, 0, 1), transform 0.65s cubic-bezier(0.22, 0.68, 0, 1);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 0.68, 0, 1),
+    transform 0.65s cubic-bezier(0.22, 0.68, 0, 1);
 }
 .sv-reveal.sv-in {
   opacity: 1;

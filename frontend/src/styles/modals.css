@@ -80,7 +80,9 @@
   color: var(--ink);
   font: 400 24px / 1 var(--font-body);
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    background 0.2s;
 }
 .cybermitra-landing-close:hover,
 .modal-close:hover,
@@ -169,7 +171,9 @@
   text-align: left;
   cursor: pointer;
   font-family: var(--font-body);
-  transition: transform 0.18s, box-shadow 0.18s;
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s;
 }
 .cybermitra-option:hover {
   transform: translate(-3px, -3px);
@@ -304,7 +308,10 @@ html[data-lang="hi"] .cybermitra-option-body strong {
   color: var(--ink);
   font: 700 14px var(--font-body);
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, transform 0.15s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.15s;
 }
 .cyber-tab:hover {
   transform: translateY(-2px);
@@ -413,7 +420,10 @@ html[data-lang="hi"] .cybermitra-option-body strong {
   font: 700 14.5px var(--font-body);
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    background 0.2s;
 }
 .cyber-fir-actions button:hover,
 .cyber-fir-actions a:hover {

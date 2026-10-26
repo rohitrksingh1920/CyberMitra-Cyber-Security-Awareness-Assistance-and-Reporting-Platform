@@ -32,14 +32,14 @@ import "./styles/features.css";
 
 /* ---- page markup + behaviour (extracted from the original single-file build) ---- */
 import bodyHtml from "./legacy/body.html?raw";
-import s0 from "./legacy/script_0.js?raw";      // content data + renderers + language + SOS
-import s1 from "./legacy/script_1.js?raw";      // report / FIR popup
+import s0 from "./legacy/script_0.js?raw"; // content data + renderers + language + SOS
+import s1 from "./legacy/script_1.js?raw"; // report / FIR popup
 import s2 from "./legacy/script_2.js?raw";
-import s3 from "./legacy/script_3.js?raw";      // landing chooser
-import s4 from "./legacy/script_4.js?raw";      // scroll reveal + progress
-import s5 from "./legacy/script_5.js?raw";      // hero shield canvas
+import s3 from "./legacy/script_3.js?raw"; // landing chooser
+import s4 from "./legacy/script_4.js?raw"; // scroll reveal + progress
+import s5 from "./legacy/script_5.js?raw"; // hero shield canvas
 import s6 from "./legacy/script_6.js?raw";
-import s7 from "./legacy/script_7.js?raw";      // backend integration (complaints, tracking, suspect check)
+import s7 from "./legacy/script_7.js?raw"; // backend integration (complaints, tracking, suspect check)
 import f1 from "./legacy/features_core.js?raw"; // theme, nav, toasts, copy, a11y, quiz stats
 import f2 from "./legacy/features_help.js?raw"; // triage helper, red-flag hunt, search palette
 
@@ -62,7 +62,9 @@ function App() {
       document.body.appendChild(el);
       return el;
     });
-    document.dispatchEvent(new Event("DOMContentLoaded", { bubbles: true, cancelable: true }));
+    document.dispatchEvent(
+      new Event("DOMContentLoaded", { bubbles: true, cancelable: true }),
+    );
     return () => injected.forEach((el) => el.remove());
   }, []);
   return <div dangerouslySetInnerHTML={{ __html: bodyHtml }} />;

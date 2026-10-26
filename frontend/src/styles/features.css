@@ -6,7 +6,11 @@
 html.theme-anim *,
 html.theme-anim *::before,
 html.theme-anim *::after {
-  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease !important;
 }
 ::view-transition-old(root),
 ::view-transition-new(root) {
@@ -45,7 +49,9 @@ html.theme-anim *::after {
   font-weight: 700;
   font-size: 15px;
   box-shadow: var(--shadow-lg);
-  animation: toast-in 0.32s cubic-bezier(0.2, 1.4, 0.4, 1) both, toast-out 0.3s ease 2.6s forwards;
+  animation:
+    toast-in 0.32s cubic-bezier(0.2, 1.4, 0.4, 1) both,
+    toast-out 0.3s ease 2.6s forwards;
 }
 .toast.bad {
   background: var(--danger);
@@ -302,7 +308,10 @@ html[data-lang="hi"] .triage-q {
   text-align: left;
   font: inherit;
   cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    background 0.2s;
 }
 .scenario:hover,
 .time-btn:hover {
@@ -400,7 +409,11 @@ html[data-lang="hi"] .time-btn strong {
   display: block;
   height: 100%;
   width: 0;
-  background: repeating-linear-gradient(to bottom, var(--copper) 0 2px, color-mix(in srgb, var(--copper) 30%, transparent) 2px 3px);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--copper) 0 2px,
+    color-mix(in srgb, var(--copper) 30%, transparent) 2px 3px
+  );
   transition: width 0.4s ease;
 }
 .plan-list {
@@ -420,7 +433,9 @@ html[data-lang="hi"] .time-btn strong {
   background: var(--paper);
   cursor: pointer;
   user-select: none;
-  transition: background 0.2s, transform 0.15s;
+  transition:
+    background 0.2s,
+    transform 0.15s;
 }
 .plan-item:hover {
   background: var(--surface-2);

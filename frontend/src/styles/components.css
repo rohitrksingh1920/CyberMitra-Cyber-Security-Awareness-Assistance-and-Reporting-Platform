@@ -17,7 +17,9 @@
   border-radius: 4px 12px 12px 12px;
   background: var(--surface);
   box-shadow: var(--shadow);
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
 }
 .exhibit:hover {
   box-shadow: 5px 6px 0 var(--ink);
@@ -86,7 +88,9 @@
   border-radius: 50%;
   font: 700 22px / 1 var(--font-mono);
   color: var(--ink);
-  transition: transform 0.3s, background 0.2s;
+  transition:
+    transform 0.3s,
+    background 0.2s;
 }
 .exhibit:hover .exhibit-toggle {
   background: var(--copper);
@@ -297,7 +301,10 @@
   padding: 14px 12px;
   min-height: 112px;
   background: var(--wa-bg);
-  background-image: radial-gradient(color-mix(in srgb, var(--ink) 9%, transparent) 1px, transparent 1.4px);
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--ink) 9%, transparent) 1px,
+    transparent 1.4px
+  );
   background-size: 14px 14px;
 }
 .bubble {
@@ -346,7 +353,9 @@
   background: var(--inv-surface);
   color: var(--inv-soft);
   overflow: hidden;
-  transition: transform 0.22s, box-shadow 0.22s;
+  transition:
+    transform 0.22s,
+    box-shadow 0.22s;
 }
 .rl-card:hover {
   transform: translate(-3px, -3px);
@@ -550,7 +559,11 @@ html[data-theme="dark"] .mf-myth .mf-label {
   transition: background 0.3s;
 }
 .qbar i.done {
-  background: repeating-linear-gradient(to bottom, var(--ink) 0 2px, transparent 2px 3px);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0 2px,
+    transparent 2px 3px
+  );
 }
 .qbar i.now {
   background: var(--copper);
@@ -582,7 +595,10 @@ html[data-lang="hi"] .quiz-q {
   text-align: left;
   cursor: pointer;
   counter-increment: opt;
-  transition: transform 0.15s, background 0.2s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    background 0.2s,
+    box-shadow 0.15s;
 }
 .quiz-opt::before {
   content: counter(opt, upper-alpha);
@@ -682,7 +698,11 @@ html[data-lang="hi"] .quiz-q {
 .score-big {
   margin: 4px 0 10px;
   font: 800 clamp(64px, 12vw, 104px) / 1 var(--font-display);
-  background: repeating-linear-gradient(to bottom, var(--ink) 0 6px, transparent 6px 9px);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0 6px,
+    transparent 6px 9px
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -722,7 +742,11 @@ html[data-lang="hi"] .quiz-q {
 .rule-card .n {
   margin-bottom: 8px;
   font: 800 38px / 1 var(--font-display);
-  background: repeating-linear-gradient(to bottom, var(--inv-copper) 0 5px, transparent 5px 7px);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--inv-copper) 0 5px,
+    transparent 5px 7px
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -881,7 +905,9 @@ html[data-lang="hi"] .quiz-q {
   border: 1.5px solid var(--inv-line);
   border-radius: var(--radius);
   background: var(--inv-surface);
-  transition: border-color 0.2s, transform 0.2s;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
 }
 .cybermitra-step:hover {
   border-color: var(--inv-copper);
@@ -983,7 +1009,11 @@ html[data-lang="hi"] .quiz-q {
   content: "";
   width: 34px;
   height: 11px;
-  background: repeating-linear-gradient(to bottom, var(--copper) 0 2px, transparent 2px 4px);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--copper) 0 2px,
+    transparent 2px 4px
+  );
 }
 .cybermitra-about-grid {
   display: grid;

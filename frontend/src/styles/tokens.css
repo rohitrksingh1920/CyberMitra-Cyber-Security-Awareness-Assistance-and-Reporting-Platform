@@ -53,8 +53,10 @@
   --inv-copper: #e39a63;
 
   /* effects */
-  --shadow: 0 1px 0 rgba(22, 18, 15, 0.06), 0 14px 28px -16px rgba(22, 18, 15, 0.32);
-  --shadow-lg: 0 2px 0 rgba(22, 18, 15, 0.08), 0 30px 60px -28px rgba(22, 18, 15, 0.5);
+  --shadow:
+    0 1px 0 rgba(22, 18, 15, 0.06), 0 14px 28px -16px rgba(22, 18, 15, 0.32);
+  --shadow-lg:
+    0 2px 0 rgba(22, 18, 15, 0.08), 0 30px 60px -28px rgba(22, 18, 15, 0.5);
   --grain-opacity: 0.5;
   --scan: rgba(22, 18, 15, 0.055);
   --glass: rgba(243, 238, 229, 0.86);
@@ -73,8 +75,11 @@
 
   /* type */
   --font-display: "Unbounded", "Noto Sans Devanagari", system-ui, sans-serif;
-  --font-body: "Atkinson Hyperlegible Next", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-body:
+    "Atkinson Hyperlegible Next", "Noto Sans Devanagari", system-ui,
+    -apple-system, "Segoe UI", sans-serif;
+  --font-mono:
+    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --font-hand: "Kalam", "Noto Sans Devanagari", cursive;
 
   --radius: 10px;
